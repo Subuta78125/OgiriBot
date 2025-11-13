@@ -47,18 +47,20 @@ function App() {
 
   return (
     <div className="App">
-      <h1>AI大喜利Bot</h1>
-      {/* フォーム部分は省略（変更なし） */}
+      <div className="header">
+        <h1 className="title">AI大喜利Bot</h1>
+        <p className="discription">お題を入力して、GeminiとGPTのユーモアを確かめよう!</p>
+      </div>
       <form onSubmit={handleSubmit}>
         <input
-          class="themeBox"
+          className="themeBox"
           type="text"
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
           placeholder="お題を入力してください"
           disabled={isLoading}
         />
-        <button class="submitButton" type="submit" disabled={isLoading || !topic.trim()}>
+        <button className="submitButton" type="submit" disabled={isLoading || !topic.trim()}>
           {isLoading ? 'AIが考え中...' : '回答を生成'}
         </button>
       </form>

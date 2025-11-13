@@ -1,3 +1,22 @@
+.header{
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: #e0f2f7;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.title{
+  margin: 0px;
+}
+.discription{
+  padding-top: 15px;
+  margin: 0;
+}
+
 .themeBox {
     width: 90%; 
     margin-left: auto; 
